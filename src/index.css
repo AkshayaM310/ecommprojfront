@@ -1,0 +1,124 @@
+:root {
+  --teal-dark: #305f7d;        /* Deep pastel teal for text/nav */
+  --pastel-teal: #81c4c6;      /* Main teal */
+  --pastel-mint: #CDECE4;      /* Card backgrounds */
+  --pastel-coral: #efa390;     /* Button */
+  --pastel-peach: #edbeae;     /* Hover */
+  --pastel-cream: #FFF8F3;     /* Page background */
+}
+
+body {
+  background-color: var(--pastel-cream);
+  color: var(--teal-dark);
+  /* margin: 30px; */
+  padding: 30px 40px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h2, h3 {
+  text-align: center;
+  color: var(--teal-dark);
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: var(--pastel-teal);
+  color: var(--teal-dark);
+  font-size: xx-large;
+  padding: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+button {
+  background-color: var(--pastel-coral);
+  color: #4a4a4a;
+  border: 2px solid transparent;  
+  padding: 10px 25px;
+  border-radius: 6px;
+  margin: 15px;
+  cursor: pointer;
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+  font-weight: 600;
+
+}
+
+button:hover {
+  transform: translateY(-3px);              /* Lift up */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.22);
+  background-color: var(--pastel-peach);    /* Soft hover shade */
+  border-color: var(--pastel-teal);         /* Pastel teal border */
+}
+
+
+.contact-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: var(--aegean-soft);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center; 
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.ccard {
+  width: 260px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 5px solid var(--aegean-mid);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.ccard:hover {
+  transform: translateY(-6px);
+  border-color: var(--pastel-coral);
+}
+
+.ccard p {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.productlist {
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.pcard {
+  width: 230px;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid var(--pastel-teal);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.pcard:hover {
+  transform: scale(1.05);
+  border-color: var(--pastel-coral);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
